@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Complaints</title>
+        <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>All Complaints</h2>
+    <table>
+        <caption>Complaint Records</caption>
+        <thead>
+            <tr>
+                <th>Case ID</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Date Reported</th>
+                <th>Location</th>
+                <th>Area</th>
+                <th>Evidence</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="complaintsTableBody">
+            <tr>
+                <td colspan="9" id="loadingRow">Loading...</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="errorMessage" style="color: red; margin-top: 10px;"></div>
+    <p><a href="/home">Back to Home</a></p>
+    <script>
+        // Status options must match your enum/db values
+        const statusOptions = [
+            "New",
+            "Under Investigation",
+            "Solved",
+            "Closed"
+        ];
+
+        function formatDate(isoString) {
+            if (!isoString) return '';
+            return isoString.replace('T', ' ').substring(0, 19);
+        }
+
+        function loadComplaints() {
+            fetch('/api/complaints')
+                .then(res => {
+                    if (!res.ok) throw new Error('Network response was not ok: ' + res.status);
+                    return res.json();
+                })
+                .then(data => {
+                    const tbody = document.getElementById('complaintsTableBody');
+                    tbody.innerHTML = '';
+                    if (!Array.isArray(data) || data.length === 0) {
+                        tbody.innerHTML = '<tr><td colspan="9">No complaints found.</td></tr>';
+                        return;
+                    }
+                    data.forEach(c => {
+                        const tr = document.createElement('tr');
+                        // Status dropdown
+                        let statusDropdown = `<select id="status-${c.caseId}">`;
+                        statusOptions.forEach(opt => {
+                            statusDropdown += `<option value="${opt}"${opt === c.status ? ' selected' : ''}>${opt}</option>`;
+                        });
+                        statusDropdown += '</select>';
+
+                        tr.innerHTML = `
+                            <td>${c.caseId !== undefined ? c.caseId : ''}</td>
+                            <td>${c.type || ''}</td>
+                            <td>${c.description || ''}</td>
+                            <td>${formatDate(c.dateReported)}</td>
+                            <td>${c.location || ''}</td>
+                            <td>${c.area || ''}</td>
+                            <td>${c.evidence || ''}</td>
+                            <td>${statusDropdown}</td>
+                            <td>
+                                <button onclick="updateStatus(${c.caseId})">Save</button>
+                                <button onclick="deleteComplaint(${c.caseId})" style="color:red;">Delete</button>
+                            </td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                })
+                .catch(error => {
+                    document.getElementById('complaintsTableBody').innerHTML =
+                        '<tr><td colspan="9">Error loading complaints.</td></tr>';
+                    document.getElementById('errorMessage').innerText = error;
+                    console.error('Fetch error:', error);
+                });
+        }
+
+        function updateStatus(caseId) {
+            const select = document.getElementById(`status-${caseId}`);
+            const newStatus = select.value;
+            fetch(`/api/complaints/${caseId}/status`, {
+                method: 'PATCH',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ status: newStatus })
+            })
+            .then(res => {
+                if (!res.ok) throw new Error('Failed to update status: ' + res.status);
+                return res.text();
+            })
+            .then(msg => {
+                alert(msg);
+                loadComplaints();
+            })
+            .catch(err => {
+                alert('Error updating status: ' + err);
+            });
+        }
+
+        function deleteComplaint(caseId) {
+            if (!confirm('Are you sure you want to delete this complaint?')) return;
+            fetch(`/api/complaints/${caseId}`, {
+                method: 'DELETE'
+            })
+            .then(res => {
+                if (!res.ok) throw new Error('Failed to delete: ' + res.status);
+                return res.text();
+            })
+            .then(msg => {
+                alert('Deleted successfully');
+                loadComplaints();
+            })
+            .catch(err => {
+                alert('Error deleting complaint: ' + err);
+            });
+        }
+
+        loadComplaints();
+    </script>
+</body>
+</html>

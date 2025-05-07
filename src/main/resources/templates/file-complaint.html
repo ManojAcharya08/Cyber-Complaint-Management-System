@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>File Complaint</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>File a New Complaint</h2>
+    <form id="complaintForm" autocomplete="off">
+        <div class="form-group">
+            <label for="type">Type:</label>
+            <input type="text" name="type" id="type" required placeholder="e.g. Phishing, Hacking, Fraud">
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea name="description" id="description" required placeholder="Describe the incident"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" name="location" id="location" required placeholder="City or Address">
+        </div>
+        <div class="form-group">
+            <label for="area">Area:</label>
+            <input type="text" name="area" id="area" required placeholder="Area/Region">
+        </div>
+        <div class="form-group">
+            <label for="evidence">Evidence (URL or file path):</label>
+            <input type="text" name="evidence" id="evidence" placeholder="Optional">
+        </div>
+        <button type="submit">Submit Complaint</button>
+    </form>
+    <div id="message"></div>
+    <p><a th:href="@{/home}">Back to Home</a></p>
+  </div>
+  <script>
+    document.getElementById('complaintForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const complaint = {
+            type: form.type.value,
+            description: form.description.value,
+            location: form.location.value,
+            area: form.area.value,
+            evidence: form.evidence.value
+        };
+        fetch('/api/complaints', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(complaint)
+        })
+        .then(res => {
+            if (!res.ok) throw new Error('Network response was not ok');
+            return res.json();
+        })
+        .then(data => {
+            document.getElementById('message').innerText = 'Complaint filed successfully!';
+            document.getElementById('message').style.color = '#39ff14';
+            form.reset();
+        })
+        .catch(() => {
+            document.getElementById('message').innerText = 'Error filing complaint.';
+            document.getElementById('message').style.color = '#ff3860';
+        });
+    });
+  </script>
+</body>
+</html>

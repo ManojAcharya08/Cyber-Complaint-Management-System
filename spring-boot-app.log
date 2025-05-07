@@ -1,0 +1,1083 @@
+2025-05-07T07:45:26.048+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 11444 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T07:45:26.053+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T07:45:26.097+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-07T07:45:26.098+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-07T07:45:26.631+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T07:45:26.686+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2025-05-07T07:45:27.108+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T07:45:27.121+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T07:45:27.121+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T07:45:27.159+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T07:45:27.160+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1062 ms
+2025-05-07T07:45:27.311+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T07:45:27.369+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07T07:45:27.401+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T07:45:27.653+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T07:45:27.681+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-07T07:45:28.792+05:30  WARN 11444 --- [CyberCrimeManagement] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2025-05-07T07:45:28.793+05:30 ERROR 11444 --- [CyberCrimeManagement] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-05-07T07:45:28.794+05:30  WARN 11444 --- [CyberCrimeManagement] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1865) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1814) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.example.cybercrime_management.CyberCrimeManagementApplication.main(CyberCrimeManagementApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	... 38 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	... 51 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:760) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	... 54 common frames omitted
+
+2025-05-07T07:45:28.800+05:30 ERROR 11444 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-05-07T07:45:28.801+05:30  WARN 11444 --- [CyberCrimeManagement] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-05-07T07:45:28.805+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-05-07T07:45:28.816+05:30  INFO 11444 --- [CyberCrimeManagement] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-07T07:45:28.836+05:30 ERROR 11444 --- [CyberCrimeManagement] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.6.jar:6.2.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.4.5.jar:3.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.4.5.jar:3.4.5]
+	at com.example.cybercrime_management.CyberCrimeManagementApplication.main(CyberCrimeManagementApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.5.jar:3.4.5]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1865) ~[spring-beans-6.2.6.jar:6.2.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1814) ~[spring-beans-6.2.6.jar:6.2.6]
+	... 18 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:392) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.13.Final.jar:6.6.13.Final]
+	... 33 common frames omitted
+
+2025-05-07T07:46:05.405+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 10676 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T07:46:05.407+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T07:46:05.452+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-07T07:46:05.452+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-07T07:46:05.981+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T07:46:06.028+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2025-05-07T07:46:06.442+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T07:46:06.453+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T07:46:06.453+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T07:46:06.493+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T07:46:06.494+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1041 ms
+2025-05-07T07:46:06.629+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T07:46:06.674+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07T07:46:06.698+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T07:46:06.908+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T07:46:06.934+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-07T07:46:07.257+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1af9fcb0
+2025-05-07T07:46:07.259+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-07T07:46:07.348+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T07:46:08.035+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T07:46:08.038+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T07:46:08.272+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T07:46:08.341+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T07:46:08.659+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T07:46:08.694+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T07:46:08.701+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 3.601 seconds (process running for 4.159)
+2025-05-07T07:46:18.750+05:30  INFO 10676 --- [CyberCrimeManagement] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T07:46:18.752+05:30  INFO 10676 --- [CyberCrimeManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T07:46:18.753+05:30  INFO 10676 --- [CyberCrimeManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T07:46:32.289+05:30  WARN 10676 --- [CyberCrimeManagement] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:46:35.392+05:30  WARN 10676 --- [CyberCrimeManagement] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:46:35.835+05:30  WARN 10676 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2025-05-07T07:46:35.836+05:30 ERROR 10676 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'c1_0.case_id' in 'field list'
+2025-05-07T07:46:35.851+05:30  WARN 10676 --- [CyberCrimeManagement] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select c1_0.case_id,c1_0.area,c1_0.date_reported,c1_0.description,c1_0.evidence,c1_0.location,c1_0.status,c1_0.type from complaint c1_0] [Unknown column 'c1_0.case_id' in 'field list'] [n/a]; SQL [n/a]]
+2025-05-07T07:51:21.550+05:30  INFO 10676 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-05-07T07:51:21.554+05:30  INFO 10676 --- [CyberCrimeManagement] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07T07:51:21.559+05:30  INFO 10676 --- [CyberCrimeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-07T07:51:21.563+05:30  INFO 10676 --- [CyberCrimeManagement] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T07:51:21.567+05:30  INFO 10676 --- [CyberCrimeManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-07T07:51:21.575+05:30  INFO 10676 --- [CyberCrimeManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-07T07:51:21.656+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 10676 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T07:51:21.657+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T07:51:21.813+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T07:51:21.821+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-05-07T07:51:21.924+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T07:51:21.926+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T07:51:21.926+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T07:51:21.941+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T07:51:21.941+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 282 ms
+2025-05-07T07:51:21.975+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T07:51:21.977+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T07:51:21.986+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T07:51:21.987+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-07T07:51:22.002+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5086e5d3
+2025-05-07T07:51:22.003+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-07T07:51:22.004+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T07:51:22.040+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T07:51:22.041+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T07:51:22.098+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T07:51:22.107+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T07:51:22.210+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T07:51:22.220+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T07:51:22.223+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.597 seconds (process running for 317.683)
+2025-05-07T07:51:22.226+05:30  INFO 10676 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T07:51:26.074+05:30  INFO 10676 --- [CyberCrimeManagement] [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-07T07:51:26.076+05:30  INFO 10676 --- [CyberCrimeManagement] [RMI TCP Connection(16)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07T07:51:26.079+05:30  INFO 10676 --- [CyberCrimeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-07T07:51:26.081+05:30  INFO 10676 --- [CyberCrimeManagement] [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T07:51:26.082+05:30  INFO 10676 --- [CyberCrimeManagement] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-05-07T07:51:26.086+05:30  INFO 10676 --- [CyberCrimeManagement] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-05-07T07:51:30.956+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 2320 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T07:51:30.958+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T07:51:31.006+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-07T07:51:31.006+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-07T07:51:31.587+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T07:51:31.637+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2025-05-07T07:51:32.137+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T07:51:32.151+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T07:51:32.152+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T07:51:32.196+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T07:51:32.197+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1190 ms
+2025-05-07T07:51:32.355+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T07:51:32.420+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07T07:51:32.457+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T07:51:32.730+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T07:51:32.763+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-07T07:51:33.143+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@248bef99
+2025-05-07T07:51:33.145+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-07T07:51:33.225+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T07:51:33.892+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T07:51:33.895+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T07:51:34.146+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T07:51:34.209+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T07:51:34.620+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T07:51:34.666+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T07:51:34.673+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 4.046 seconds (process running for 4.701)
+2025-05-07T07:51:40.409+05:30  INFO 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T07:51:40.409+05:30  INFO 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T07:51:40.410+05:30  INFO 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T07:51:40.648+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:51:41.064+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2025-05-07T07:51:41.064+05:30 ERROR 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'c1_0.case_id' in 'field list'
+2025-05-07T07:51:41.075+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select c1_0.case_id,c1_0.area,c1_0.date_reported,c1_0.description,c1_0.evidence,c1_0.location,c1_0.status,c1_0.type from complaint c1_0] [Unknown column 'c1_0.case_id' in 'field list'] [n/a]; SQL [n/a]]
+2025-05-07T07:51:43.294+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:51:45.880+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:52:31.272+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:52:33.361+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2025-05-07T07:52:33.361+05:30 ERROR 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'c1_0.case_id' in 'field list'
+2025-05-07T07:52:33.365+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select c1_0.case_id,c1_0.area,c1_0.date_reported,c1_0.description,c1_0.evidence,c1_0.location,c1_0.status,c1_0.type from complaint c1_0] [Unknown column 'c1_0.case_id' in 'field list'] [n/a]; SQL [n/a]]
+2025-05-07T07:52:33.375+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:55:10.695+05:30  INFO 2320 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-05-07T07:55:10.699+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07T07:55:10.704+05:30  INFO 2320 --- [CyberCrimeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-07T07:55:10.707+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T07:55:10.711+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-07T07:55:10.718+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-07T07:55:10.786+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 2320 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T07:55:10.787+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T07:55:10.923+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T07:55:10.931+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-05-07T07:55:11.035+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T07:55:11.037+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T07:55:11.038+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T07:55:11.056+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T07:55:11.056+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 267 ms
+2025-05-07T07:55:11.090+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T07:55:11.093+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T07:55:11.103+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T07:55:11.105+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-07T07:55:11.128+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@576fa68b
+2025-05-07T07:55:11.129+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-07T07:55:11.130+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T07:55:11.172+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T07:55:11.173+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T07:55:11.230+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T07:55:11.239+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T07:55:11.346+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T07:55:11.356+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T07:55:11.359+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.595 seconds (process running for 221.386)
+2025-05-07T07:55:11.360+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T07:55:15.799+05:30  INFO 2320 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-07T07:55:15.800+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07T07:55:15.804+05:30  INFO 2320 --- [CyberCrimeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-07T07:55:15.806+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T07:55:15.807+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-05-07T07:55:15.810+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-05-07T07:55:15.867+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 2320 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T07:55:15.868+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T07:55:16.000+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T07:55:16.016+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2025-05-07T07:55:16.087+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T07:55:16.087+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T07:55:16.087+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T07:55:16.104+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T07:55:16.104+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 235 ms
+2025-05-07T07:55:16.130+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T07:55:16.134+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T07:55:16.140+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T07:55:16.141+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-05-07T07:55:16.154+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2179c675
+2025-05-07T07:55:16.155+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-05-07T07:55:16.156+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T07:55:16.188+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T07:55:16.188+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T07:55:16.237+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T07:55:16.243+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T07:55:16.317+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T07:55:16.326+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T07:55:16.329+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.482 seconds (process running for 226.357)
+2025-05-07T07:55:16.330+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T07:55:53.278+05:30  INFO 2320 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-05-07T07:55:53.279+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07T07:55:53.282+05:30  INFO 2320 --- [CyberCrimeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-07T07:55:53.283+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T07:55:53.284+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-05-07T07:55:53.288+05:30  INFO 2320 --- [CyberCrimeManagement] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-05-07T07:55:53.337+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 2320 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T07:55:53.338+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T07:55:53.459+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T07:55:53.476+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2025-05-07T07:55:53.546+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T07:55:53.547+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T07:55:53.548+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T07:55:53.561+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T07:55:53.562+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 222 ms
+2025-05-07T07:55:53.594+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T07:55:53.596+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T07:55:53.603+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T07:55:53.604+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-05-07T07:55:53.617+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d011d5d
+2025-05-07T07:55:53.617+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-05-07T07:55:53.618+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T07:55:53.647+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T07:55:53.648+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T07:55:53.697+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T07:55:53.704+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T07:55:53.791+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T07:55:53.801+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T07:55:53.804+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.485 seconds (process running for 263.832)
+2025-05-07T07:55:53.806+05:30  INFO 2320 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T07:55:57.757+05:30  INFO 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T07:55:57.757+05:30  INFO 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T07:55:57.758+05:30  INFO 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T07:55:57.822+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:55:57.835+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T07:55:58.722+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T07:55:58.730+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:55:59.355+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T07:55:59.363+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:55:59.942+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T07:55:59.951+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:56:00.390+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T07:56:00.399+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:56:00.601+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T07:56:00.611+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:56:00.812+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T07:56:00.822+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:56:01.000+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T07:56:01.011+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:56:01.223+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T07:56:01.234+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:56:02.604+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:56:04.414+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:56:32.933+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T07:56:34.218+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T07:56:34.229+05:30  WARN 2320 --- [CyberCrimeManagement] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T08:08:20.942+05:30  INFO 2320 --- [CyberCrimeManagement] [RMI TCP Connection(34)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-07T08:08:20.944+05:30  INFO 2320 --- [CyberCrimeManagement] [RMI TCP Connection(34)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07T08:08:20.947+05:30  INFO 2320 --- [CyberCrimeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-07T08:08:20.949+05:30  INFO 2320 --- [CyberCrimeManagement] [RMI TCP Connection(34)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T08:08:20.950+05:30  INFO 2320 --- [CyberCrimeManagement] [RMI TCP Connection(34)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-05-07T08:08:20.954+05:30  INFO 2320 --- [CyberCrimeManagement] [RMI TCP Connection(34)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-05-07T08:09:41.823+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 1772 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T08:09:41.826+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T08:09:41.878+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-07T08:09:41.878+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-07T08:09:42.409+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T08:09:42.454+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2025-05-07T08:09:42.894+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T08:09:42.907+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T08:09:42.907+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T08:09:42.951+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T08:09:42.951+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1072 ms
+2025-05-07T08:09:43.105+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T08:09:43.168+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07T08:09:43.203+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T08:09:43.456+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T08:09:43.485+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-07T08:09:43.831+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dc2b93d
+2025-05-07T08:09:43.834+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-07T08:09:43.911+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T08:09:44.571+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T08:09:44.573+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T08:09:44.804+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T08:09:44.858+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T08:09:45.177+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T08:09:45.210+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T08:09:45.217+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 3.701 seconds (process running for 4.401)
+2025-05-07T08:09:52.548+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T08:09:52.548+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T08:09:52.549+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T08:09:52.806+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T08:09:54.256+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T08:09:54.660+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2025-05-07T08:09:54.660+05:30 ERROR 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'c1_0.case_id' in 'field list'
+2025-05-07T08:09:54.685+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select c1_0.case_id,c1_0.area,c1_0.date_reported,c1_0.description,c1_0.evidence,c1_0.location,c1_0.status,c1_0.type from complaint c1_0] [Unknown column 'c1_0.case_id' in 'field list'] [n/a]; SQL [n/a]]
+2025-05-07T08:15:21.700+05:30  INFO 1772 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-05-07T08:15:21.704+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07T08:15:21.710+05:30  INFO 1772 --- [CyberCrimeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-07T08:15:21.713+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T08:15:21.717+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-07T08:15:21.725+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-07T08:15:21.787+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 1772 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T08:15:21.788+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T08:15:21.916+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T08:15:21.924+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-05-07T08:15:22.039+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T08:15:22.041+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T08:15:22.041+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T08:15:22.056+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T08:15:22.056+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 267 ms
+2025-05-07T08:15:22.086+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T08:15:22.089+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T08:15:22.100+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T08:15:22.101+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-07T08:15:22.116+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c1c05d4
+2025-05-07T08:15:22.117+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-07T08:15:22.118+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T08:15:22.145+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T08:15:22.145+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T08:15:22.199+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T08:15:22.207+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T08:15:22.288+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T08:15:22.297+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T08:15:22.301+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.534 seconds (process running for 341.485)
+2025-05-07T08:15:22.303+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T08:21:43.373+05:30  INFO 1772 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-05-07T08:21:43.375+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07T08:21:43.379+05:30  INFO 1772 --- [CyberCrimeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-07T08:21:43.381+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T08:21:43.382+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-05-07T08:21:43.386+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-05-07T08:21:43.447+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 1772 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T08:21:43.447+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T08:21:43.568+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T08:21:43.576+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-05-07T08:21:43.664+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T08:21:43.665+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T08:21:43.666+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T08:21:43.680+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T08:21:43.680+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 231 ms
+2025-05-07T08:21:43.712+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T08:21:43.714+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T08:21:43.723+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T08:21:43.725+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-05-07T08:21:43.749+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3449f78a
+2025-05-07T08:21:43.750+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-05-07T08:21:43.753+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T08:21:43.785+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T08:21:43.785+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T08:21:43.838+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T08:21:43.847+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T08:21:43.939+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T08:21:43.948+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T08:21:43.950+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.524 seconds (process running for 723.218)
+2025-05-07T08:21:43.951+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T08:22:09.753+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T08:22:09.753+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T08:22:09.754+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T08:22:09.785+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2025-05-07T08:22:09.785+05:30 ERROR 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'c1_0.case_id' in 'field list'
+2025-05-07T08:22:09.792+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select c1_0.case_id,c1_0.area,c1_0.date_reported,c1_0.description,c1_0.evidence,c1_0.location,c1_0.status,c1_0.type from complaint c1_0] [Unknown column 'c1_0.case_id' in 'field list'] [n/a]; SQL [n/a]]
+2025-05-07T08:22:09.792+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T08:22:10.969+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2025-05-07T08:22:10.969+05:30 ERROR 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'c1_0.case_id' in 'field list'
+2025-05-07T08:22:10.973+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select c1_0.case_id,c1_0.area,c1_0.date_reported,c1_0.description,c1_0.evidence,c1_0.location,c1_0.status,c1_0.type from complaint c1_0] [Unknown column 'c1_0.case_id' in 'field list'] [n/a]; SQL [n/a]]
+2025-05-07T08:22:10.982+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T08:27:47.229+05:30  INFO 1772 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-07T08:27:47.230+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07T08:27:47.234+05:30  INFO 1772 --- [CyberCrimeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-07T08:27:47.236+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T08:27:47.238+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-05-07T08:27:47.243+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-05-07T08:27:47.301+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 1772 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T08:27:47.301+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T08:27:47.419+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T08:27:47.425+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-05-07T08:27:47.512+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T08:27:47.514+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T08:27:47.514+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T08:27:47.529+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T08:27:47.529+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 225 ms
+2025-05-07T08:27:47.559+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T08:27:47.561+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T08:27:47.567+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T08:27:47.568+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-05-07T08:27:47.583+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@422f38c3
+2025-05-07T08:27:47.584+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-05-07T08:27:47.585+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T08:27:47.612+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T08:27:47.612+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T08:27:47.661+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T08:27:47.670+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T08:27:47.758+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T08:27:47.766+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T08:27:47.769+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.488 seconds (process running for 1087.123)
+2025-05-07T08:27:47.770+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T08:27:57.955+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T08:27:57.955+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T08:27:57.956+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T08:27:57.996+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T08:27:58.024+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T08:27:59.206+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T08:27:59.215+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T08:30:27.893+05:30  INFO 1772 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 17 class path changes (0 additions, 17 deletions, 0 modifications)
+2025-05-07T08:30:27.895+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07T08:30:27.904+05:30  INFO 1772 --- [CyberCrimeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-07T08:30:27.906+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T08:30:27.907+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-05-07T08:30:27.912+05:30  INFO 1772 --- [CyberCrimeManagement] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-05-07T08:30:31.846+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 1772 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T08:30:31.846+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T08:30:31.974+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T08:30:31.981+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-05-07T08:30:32.053+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T08:30:32.055+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T08:30:32.055+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T08:30:32.075+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-05-07T08:30:32.075+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 227 ms
+2025-05-07T08:30:32.116+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T08:30:32.118+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T08:30:32.126+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T08:30:32.127+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-05-07T08:30:32.142+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f256e3c
+2025-05-07T08:30:32.142+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-05-07T08:30:32.144+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T08:30:32.179+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T08:30:32.179+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T08:30:32.265+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T08:30:32.276+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T08:30:32.379+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T08:30:32.391+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T08:30:32.393+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.569 seconds (process running for 1251.786)
+2025-05-07T08:30:32.395+05:30  INFO 1772 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T08:32:24.072+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T08:32:24.073+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T08:32:24.074+05:30  INFO 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T08:32:24.083+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource index.html.]
+2025-05-07T08:32:24.119+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T08:32:31.520+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource home.html.]
+2025-05-07T08:32:31.549+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T08:32:35.883+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T08:34:52.880+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T08:34:52.888+05:30  WARN 1772 --- [CyberCrimeManagement] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T13:22:03.063+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 3804 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T13:22:03.068+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T13:22:03.172+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-07T13:22:03.172+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-07T13:22:04.354+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T13:22:04.451+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
+2025-05-07T13:22:05.349+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T13:22:05.375+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T13:22:05.376+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07T13:22:05.456+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T13:22:05.457+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2285 ms
+2025-05-07T13:22:05.730+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T13:22:05.846+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07T13:22:05.903+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T13:22:06.398+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T13:22:06.454+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-07T13:22:07.298+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2066519e
+2025-05-07T13:22:07.308+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-07T13:22:07.484+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T13:22:08.799+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T13:22:08.804+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T13:22:09.337+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-07T13:22:09.471+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T13:22:10.292+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T13:22:10.375+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-07T13:22:10.387+05:30  INFO 3804 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 8.266 seconds (process running for 9.528)
+2025-05-07T13:22:20.842+05:30  INFO 3804 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T13:22:20.844+05:30  INFO 3804 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T13:22:20.847+05:30  INFO 3804 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-05-07T13:22:31.862+05:30  WARN 3804 --- [CyberCrimeManagement] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T13:22:35.739+05:30  WARN 3804 --- [CyberCrimeManagement] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T13:24:10.952+05:30  WARN 3804 --- [CyberCrimeManagement] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T13:24:13.096+05:30  WARN 3804 --- [CyberCrimeManagement] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T13:24:13.517+05:30  WARN 3804 --- [CyberCrimeManagement] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T13:25:29.690+05:30  INFO 3804 --- [CyberCrimeManagement] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-07T13:25:29.697+05:30  INFO 3804 --- [CyberCrimeManagement] [RMI TCP Connection(13)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07T13:25:29.713+05:30  INFO 3804 --- [CyberCrimeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-07T13:25:29.725+05:30  INFO 3804 --- [CyberCrimeManagement] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T13:25:29.735+05:30  INFO 3804 --- [CyberCrimeManagement] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-07T13:25:29.761+05:30  INFO 3804 --- [CyberCrimeManagement] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-07T18:44:53.566+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 19564 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T18:44:53.568+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T18:44:53.614+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-07T18:44:53.614+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-07T18:44:54.246+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T18:44:54.296+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2025-05-07T18:44:54.775+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T18:44:54.787+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T18:44:54.787+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-05-07T18:44:54.831+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T18:44:54.831+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1217 ms
+2025-05-07T18:44:54.964+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T18:44:55.031+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-07T18:44:55.064+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T18:44:55.286+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T18:44:55.313+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-07T18:44:55.772+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50cd4a08
+2025-05-07T18:44:55.774+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-07T18:44:56.513+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T18:44:56.515+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T18:44:56.828+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T18:44:56.965+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7debafb6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2173a594, org.springframework.security.web.context.SecurityContextHolderFilter@63cb7261, org.springframework.security.web.header.HeaderWriterFilter@43f058e5, org.springframework.web.filter.CorsFilter@f39c4c9, org.springframework.security.web.authentication.logout.LogoutFilter@2c4c851a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e6e4f3b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2db0d806, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@471bba48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ff0f5cb, org.springframework.security.web.session.SessionManagementFilter@11d8da62, org.springframework.security.web.access.ExceptionTranslationFilter@7af9b204, org.springframework.security.web.access.intercept.AuthorizationFilter@25a84219]
+2025-05-07T18:44:57.159+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T18:44:57.190+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-05-07T18:44:57.198+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 3.99 seconds (process running for 4.749)
+2025-05-07T18:45:16.401+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T18:45:16.402+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T18:45:16.403+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T18:45:16.515+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-2] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T18:45:16.782+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-4] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T18:45:26.533+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-8] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T18:45:26.591+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T18:45:28.834+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-10] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T18:45:28.877+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T18:45:29.103+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T18:45:31.309+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-4] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T18:45:31.342+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T18:45:33.010+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T18:45:33.049+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T18:46:37.101+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-2] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T18:46:37.132+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T18:46:38.429+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-3] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T18:46:38.455+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T18:46:38.471+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T18:46:45.729+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2025-05-07T18:46:48.946+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T18:46:48.989+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2025-05-07T18:46:48.993+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T18:46:49.000+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T18:59:18.782+05:30  INFO 19564 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-07T18:59:18.892+05:30  INFO 19564 --- [CyberCrimeManagement] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T18:59:18.933+05:30  INFO 19564 --- [CyberCrimeManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-07T18:59:18.995+05:30  INFO 19564 --- [CyberCrimeManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-07T18:59:19.196+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 19564 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T18:59:19.196+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T18:59:19.399+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T18:59:19.409+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-05-07T18:59:19.548+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T18:59:19.549+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T18:59:19.549+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-05-07T18:59:19.567+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T18:59:19.567+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 368 ms
+2025-05-07T18:59:19.603+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T18:59:19.606+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T18:59:19.612+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T18:59:19.613+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-07T18:59:19.712+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39112f6d
+2025-05-07T18:59:19.713+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-07T18:59:19.754+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T18:59:19.754+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T18:59:19.828+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T18:59:19.871+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f0f321, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6755d1d7, org.springframework.security.web.context.SecurityContextHolderFilter@4b1e28d6, org.springframework.security.web.header.HeaderWriterFilter@34e2650b, org.springframework.web.filter.CorsFilter@311eaae1, org.springframework.security.web.authentication.logout.LogoutFilter@76319abe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4ed2c26b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@349258fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@137fb959, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6987e733, org.springframework.security.web.session.SessionManagementFilter@3409a5f2, org.springframework.security.web.access.ExceptionTranslationFilter@57a50ad2, org.springframework.security.web.access.intercept.AuthorizationFilter@344c5a36]
+2025-05-07T18:59:19.934+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T18:59:19.943+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-05-07T18:59:19.947+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.785 seconds (process running for 867.498)
+2025-05-07T18:59:19.950+05:30  INFO 19564 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T18:59:35.139+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T18:59:35.139+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T18:59:35.140+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T18:59:35.142+05:30  INFO 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-1] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T18:59:35.220+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-05-07T18:59:35.250+05:30  WARN 19564 --- [CyberCrimeManagement] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T19:02:17.523+05:30  INFO 19564 --- [CyberCrimeManagement] [RMI TCP Connection(32)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-07T19:02:17.528+05:30  INFO 19564 --- [CyberCrimeManagement] [RMI TCP Connection(32)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:02:17.529+05:30  INFO 19564 --- [CyberCrimeManagement] [RMI TCP Connection(32)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-05-07T19:02:17.533+05:30  INFO 19564 --- [CyberCrimeManagement] [RMI TCP Connection(32)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-05-07T19:11:41.987+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 22696 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T19:11:41.989+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T19:11:42.061+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-07T19:11:42.061+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-07T19:11:42.701+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T19:11:42.747+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2025-05-07T19:11:43.192+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T19:11:43.204+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T19:11:43.204+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-05-07T19:11:43.248+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T19:11:43.248+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1186 ms
+2025-05-07T19:11:43.409+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T19:11:43.472+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-07T19:11:43.510+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T19:11:43.750+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T19:11:43.776+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-07T19:11:44.197+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b29a0b4
+2025-05-07T19:11:44.199+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-07T19:11:44.979+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T19:11:44.982+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:11:45.281+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T19:11:45.411+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53287c3e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a2f9bf8, org.springframework.security.web.context.SecurityContextHolderFilter@59144332, org.springframework.security.web.header.HeaderWriterFilter@1a6ef45f, org.springframework.web.filter.CorsFilter@5982dc49, org.springframework.security.web.authentication.logout.LogoutFilter@2a061977, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@31bc485c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cfa00d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c28144f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51a0a31c, org.springframework.security.web.session.SessionManagementFilter@981f998, org.springframework.security.web.access.ExceptionTranslationFilter@3db67b2f, org.springframework.security.web.access.intercept.AuthorizationFilter@4c42b390]
+2025-05-07T19:11:45.602+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T19:11:45.636+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-05-07T19:11:45.642+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 4.013 seconds (process running for 4.802)
+2025-05-07T19:11:59.485+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T19:11:59.485+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T19:11:59.486+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T19:11:59.521+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:12:01.427+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:12:01.624+05:30  WARN 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: No enum constant com.example.cybercrime_management.model.Complaint.Status.New]
+2025-05-07T19:14:15.613+05:30  INFO 22696 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-07T19:14:15.627+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:14:15.630+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-07T19:14:15.639+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-07T19:14:15.703+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 22696 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T19:14:15.703+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T19:14:15.844+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T19:14:15.851+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-05-07T19:14:15.954+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T19:14:15.956+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T19:14:15.956+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-05-07T19:14:15.974+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T19:14:15.974+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 268 ms
+2025-05-07T19:14:16.008+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T19:14:16.010+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T19:14:16.014+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T19:14:16.015+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-07T19:14:16.040+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dadf4c6
+2025-05-07T19:14:16.040+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-07T19:14:16.080+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T19:14:16.081+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:14:16.144+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T19:14:16.192+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@70c35322, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63ad93a7, org.springframework.security.web.context.SecurityContextHolderFilter@5a7de341, org.springframework.security.web.header.HeaderWriterFilter@2e4157a1, org.springframework.web.filter.CorsFilter@3a65355b, org.springframework.security.web.authentication.logout.LogoutFilter@5ac28ffe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@563bfaba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f51a17b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b89136f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3302e687, org.springframework.security.web.session.SessionManagementFilter@e790fc5, org.springframework.security.web.access.ExceptionTranslationFilter@93b8855, org.springframework.security.web.access.intercept.AuthorizationFilter@18482b32]
+2025-05-07T19:14:16.246+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T19:14:16.256+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-05-07T19:14:16.259+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.577 seconds (process running for 155.419)
+2025-05-07T19:14:16.262+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T19:16:39.376+05:30  INFO 22696 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-05-07T19:16:39.382+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:16:39.383+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-05-07T19:16:39.387+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-05-07T19:16:39.446+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 22696 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T19:16:39.447+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T19:16:39.570+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T19:16:39.581+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-05-07T19:16:39.665+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T19:16:39.667+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T19:16:39.667+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-05-07T19:16:39.681+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T19:16:39.681+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 232 ms
+2025-05-07T19:16:39.711+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T19:16:39.713+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T19:16:39.716+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T19:16:39.717+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-05-07T19:16:39.734+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45189805
+2025-05-07T19:16:39.734+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-05-07T19:16:39.763+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T19:16:39.763+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:16:39.817+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T19:16:39.860+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@349ed2c6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13d560a0, org.springframework.security.web.context.SecurityContextHolderFilter@730f24c4, org.springframework.security.web.header.HeaderWriterFilter@5db9cd63, org.springframework.web.filter.CorsFilter@69318a16, org.springframework.security.web.authentication.logout.LogoutFilter@30c61219, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7f92a1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f640234, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ca5066e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27d6e4e6, org.springframework.security.web.session.SessionManagementFilter@51eb1d1c, org.springframework.security.web.access.ExceptionTranslationFilter@1afecf2e, org.springframework.security.web.access.intercept.AuthorizationFilter@7afb62a]
+2025-05-07T19:16:39.908+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T19:16:39.918+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-05-07T19:16:39.920+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.493 seconds (process running for 299.08)
+2025-05-07T19:16:39.922+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T19:16:58.593+05:30  INFO 22696 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-07T19:16:58.598+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:16:58.598+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-05-07T19:16:58.602+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-05-07T19:16:58.653+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 22696 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T19:16:58.653+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T19:16:58.770+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T19:16:58.777+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-05-07T19:16:58.851+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T19:16:58.851+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T19:16:58.852+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-05-07T19:16:58.866+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T19:16:58.866+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 211 ms
+2025-05-07T19:16:58.892+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T19:16:58.894+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T19:16:58.897+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T19:16:58.898+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-05-07T19:16:58.911+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cce011a
+2025-05-07T19:16:58.912+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-05-07T19:16:58.944+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T19:16:58.944+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:16:58.995+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T19:16:59.026+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@197fe3fd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@784d699c, org.springframework.security.web.context.SecurityContextHolderFilter@37fc7f59, org.springframework.security.web.header.HeaderWriterFilter@79ddcdae, org.springframework.web.filter.CorsFilter@21b26c69, org.springframework.security.web.authentication.logout.LogoutFilter@7732d796, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7890051e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12a3736f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5047c28, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59f225b4, org.springframework.security.web.session.SessionManagementFilter@24a04c50, org.springframework.security.web.access.ExceptionTranslationFilter@78bba829, org.springframework.security.web.access.intercept.AuthorizationFilter@58c03cc0]
+2025-05-07T19:16:59.064+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T19:16:59.072+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-05-07T19:16:59.074+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.439 seconds (process running for 318.233)
+2025-05-07T19:16:59.075+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T19:18:07.695+05:30  INFO 22696 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-07T19:18:07.700+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:18:07.700+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-05-07T19:18:07.705+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-05-07T19:18:07.757+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 22696 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T19:18:07.757+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T19:18:07.875+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T19:18:07.883+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-05-07T19:18:07.944+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T19:18:07.945+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T19:18:07.945+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-05-07T19:18:07.962+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T19:18:07.963+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 205 ms
+2025-05-07T19:18:08.001+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T19:18:08.003+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T19:18:08.006+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T19:18:08.008+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-05-07T19:18:08.023+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47da0bf5
+2025-05-07T19:18:08.023+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-05-07T19:18:08.048+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T19:18:08.048+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:18:08.100+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T19:18:08.134+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6cec0bdc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@342c9bd8, org.springframework.security.web.context.SecurityContextHolderFilter@33e0cea9, org.springframework.security.web.header.HeaderWriterFilter@147731ef, org.springframework.web.filter.CorsFilter@54c3bdd, org.springframework.security.web.authentication.logout.LogoutFilter@7f3e4de6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a72fb99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52337edd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fe6c53d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@583fb6de, org.springframework.security.web.session.SessionManagementFilter@7989988b, org.springframework.security.web.access.ExceptionTranslationFilter@5296749c, org.springframework.security.web.access.intercept.AuthorizationFilter@47aecff7]
+2025-05-07T19:18:08.177+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T19:18:08.187+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-05-07T19:18:08.189+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.45 seconds (process running for 387.349)
+2025-05-07T19:18:08.190+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T19:18:19.781+05:30  INFO 22696 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-05-07T19:18:19.785+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:18:19.786+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-05-07T19:18:19.790+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-05-07T19:18:19.836+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 22696 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T19:18:19.837+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T19:18:19.958+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T19:18:19.964+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-05-07T19:18:20.018+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T19:18:20.019+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T19:18:20.019+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-05-07T19:18:20.035+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T19:18:20.036+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 198 ms
+2025-05-07T19:18:20.065+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T19:18:20.066+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T19:18:20.069+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T19:18:20.070+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-05-07T19:18:20.082+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44a93598
+2025-05-07T19:18:20.082+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-05-07T19:18:20.118+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T19:18:20.119+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:18:20.162+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T19:18:20.195+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6dbaa09f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27ce0712, org.springframework.security.web.context.SecurityContextHolderFilter@36569028, org.springframework.security.web.header.HeaderWriterFilter@4faf7f26, org.springframework.web.filter.CorsFilter@39a17fb0, org.springframework.security.web.authentication.logout.LogoutFilter@639cbc08, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6bc02d13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a7b1540, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e190d66, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53637522, org.springframework.security.web.session.SessionManagementFilter@311dd25e, org.springframework.security.web.access.ExceptionTranslationFilter@1c8402a0, org.springframework.security.web.access.intercept.AuthorizationFilter@471b2d46]
+2025-05-07T19:18:20.241+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T19:18:20.251+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-05-07T19:18:20.254+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.434 seconds (process running for 399.414)
+2025-05-07T19:18:20.256+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T19:18:34.111+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T19:18:34.111+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T19:18:34.112+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T19:18:34.114+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:18:35.676+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-3] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:22:18.345+05:30  INFO 22696 --- [CyberCrimeManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-07T19:22:18.352+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:22:18.353+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-05-07T19:22:18.357+05:30  INFO 22696 --- [CyberCrimeManagement] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-05-07T19:22:18.416+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Starting CyberCrimeManagementApplication using Java 23.0.2 with PID 22696 (C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management\target\classes started by manoj in C:\Users\manoj\Downloads\cybercrime-management\cybercrime-management)
+2025-05-07T19:22:18.417+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T19:22:18.528+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T19:22:18.534+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-05-07T19:22:18.594+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-07T19:22:18.595+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-07T19:22:18.595+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-05-07T19:22:18.608+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-07T19:22:18.608+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 190 ms
+2025-05-07T19:22:18.651+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T19:22:18.653+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T19:22:18.657+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T19:22:18.658+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-05-07T19:22:18.675+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33c89f3d
+2025-05-07T19:22:18.675+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-05-07T19:22:18.701+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T19:22:18.701+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:22:18.758+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-07T19:22:18.790+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@436f6aca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a852f7d, org.springframework.security.web.context.SecurityContextHolderFilter@2e932a97, org.springframework.security.web.header.HeaderWriterFilter@1d44f677, org.springframework.web.filter.CorsFilter@4711350e, org.springframework.security.web.authentication.logout.LogoutFilter@5ab53bc1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@389093ba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@763ecbf4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cf36c0a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b207315, org.springframework.security.web.session.SessionManagementFilter@47dcc969, org.springframework.security.web.access.ExceptionTranslationFilter@3cfc9120, org.springframework.security.web.access.intercept.AuthorizationFilter@4b88d239]
+2025-05-07T19:22:18.832+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-07T19:22:18.841+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-05-07T19:22:18.843+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] c.e.c.CyberCrimeManagementApplication    : Started CyberCrimeManagementApplication in 0.443 seconds (process running for 638.003)
+2025-05-07T19:22:18.844+05:30  INFO 22696 --- [CyberCrimeManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-07T19:22:27.590+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07T19:22:27.590+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-07T19:22:27.591+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-07T19:22:27.592+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:22:59.804+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-9] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:26:32.097+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-2] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:26:32.126+05:30  WARN 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource style.css.]
+2025-05-07T19:26:34.030+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-6] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T19:26:34.045+05:30  WARN 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource style.css.]
+2025-05-07T19:26:36.431+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-10] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:26:36.443+05:30  WARN 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource style.css.]
+2025-05-07T19:27:03.410+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-2] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:27:05.821+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-6] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:27:09.423+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T19:27:19.137+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-6] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:27:21.155+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:27:23.137+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-4] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:27:27.825+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-10] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:27:27.965+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-2] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:27:27.980+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-4] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:27:58.600+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-9] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:27:58.614+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:27:58.634+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:27:59.585+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-2] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:27:59.599+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-4] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:27:59.615+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-3] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:27:59.806+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-9] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:27:59.820+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:27:59.839+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:03.775+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-4] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:03.786+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-3] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:03.806+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-8] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:04.618+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:04.631+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:04.648+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:05.302+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-4] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:05.315+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-3] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:05.333+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-8] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:05.978+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:05.991+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:06.013+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:30:17.331+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-9] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:32:51.563+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-2] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:32:54.431+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-9] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:32:56.734+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-10] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:33:31.674+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-4] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:33:45.538+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:33:47.065+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T19:37:04.673+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T19:39:12.927+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T19:40:47.183+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T19:40:52.342+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-2] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:42:40.936+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-9] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:42:53.504+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-2] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T19:42:58.007+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-3] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:42:59.972+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:43:43.038+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:43:44.695+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-4] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:43:44.742+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-9] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:43:44.778+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-10] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:47:43.460+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-6] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:47:43.497+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-3] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:49:36.221+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-9] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:49:36.300+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-10] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:49:50.571+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-6] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:49:50.609+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-3] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:50:03.383+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:50:03.461+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:50:13.642+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-3] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:50:23.904+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T19:50:41.102+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-8] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:50:42.465+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:50:50.728+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-3] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:50:53.218+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-9] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:50:56.446+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:50:57.808+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-4] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T19:52:26.807+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-2] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T19:53:08.139+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-7] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:53:09.979+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-2] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:54:14.238+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-10] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:54:22.227+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-1] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:54:22.310+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-3] c.e.c.controller.PageController          : Navigating to login page
+2025-05-07T19:54:51.460+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-10] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:55:06.993+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-8] c.e.c.controller.PageController          : Navigating to file complaint page
+2025-05-07T19:55:25.704+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-4] c.e.c.controller.PageController          : Navigating to home page
+2025-05-07T19:55:27.189+05:30  INFO 22696 --- [CyberCrimeManagement] [http-nio-8080-exec-5] c.e.c.controller.PageController          : Navigating to view complaints page
+2025-05-07T19:59:13.513+05:30  INFO 22696 --- [CyberCrimeManagement] [RMI TCP Connection(79)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-07T19:59:13.539+05:30  INFO 22696 --- [CyberCrimeManagement] [RMI TCP Connection(79)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T19:59:13.544+05:30  INFO 22696 --- [CyberCrimeManagement] [RMI TCP Connection(79)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2025-05-07T19:59:13.554+05:30  INFO 22696 --- [CyberCrimeManagement] [RMI TCP Connection(79)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
+    body {
+      background: #101820;
+      color: #39ff14;
+      font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      z-index: 0;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(57,255,20,0.10) 0px,
+        rgba(57,255,20,0.18) 2px,
+        transparent 4px,
+        transparent 20px
+      );
+      animation: matrixRain 2s linear infinite;
+    }
+    @keyframes matrixRain {
+      0% { background-position-y: 0; }
+      100% { background-position-y: 20px; }
+    }
+    .container {
+      max-width: 400px;
+      margin: 80px auto 0 auto;
+      background: rgba(0,0,0,0.85);
+      border-radius: 10px;
+      box-shadow: 0 0 20px #39ff1480;
+      padding: 32px 24px;
+      z-index: 1;
+      position: relative;
+    }
+    h2 {
+      color: #39ff14;
+      text-shadow: 0 0 8px #39ff14, 0 0 2px #fff;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 20px 0;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      color: #39ff14;
+      font-size: 1em;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      box-sizing: border-box;
+      min-width: 0;
+      max-width: 100%;
+      font-size: 1em;
+      padding: 8px 10px;
+      background: #111;
+      color: #39ff14;
+      border: 1px solid #39ff14;
+      border-radius: 4px;
+      box-shadow: 0 0 4px #39ff1444;
+      margin-bottom: 6px;
+    }
+    input:focus {
+      outline: none;
+      border-color: #fff;
+      box-shadow: 0 0 8px #39ff14cc;
+    }
+    button {
+      background: transparent;
+      color: #39ff14;
+      border: 2px solid #39ff14;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-family: inherit;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0 0 8px #39ff1455;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      margin: 2px 0;
+    }
+    button:hover {
+      background: #39ff14;
+      color: #111;
+      box-shadow: 0 0 18px #39ff14cc;
+    }
+    #errorMessage {
+      color: #ff3860;
+      text-shadow: 0 0 4px #ff3860;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+    }
+    #logoutMessage {
+      color: #39ff14;
+      text-align: center;
+      margin-top: 10px;
+    }
+    @media (max-width: 600px) {
+      .container { max-width: 99vw; padding: 10vw 2vw; }
+      h2 { font-size: 1.2em; }
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form th:action="@{/login}" method="post" autocomplete="off">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required autofocus>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <div th:if="${param.error}" id="errorMessage">
+      Invalid username or password.
+    </div>
+    <div th:if="${param.logout}" id="logoutMessage">
+      You have been logged out.
+    </div>
+  </div>
+</body>
+</html>
